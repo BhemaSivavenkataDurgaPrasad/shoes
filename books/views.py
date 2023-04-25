@@ -7,10 +7,17 @@ def Home_page(request):
     return render(request ,'index.html')
 
 def Shop_page(request):
-    data = models.ShoesList.objects.all()
     return render(request ,'shoes.html')
 
 
 def collection_page(request):
     return render(request ,'collection.html')
+
+
+def racing_page(request):
+    return render(request,'racing boots.html')
+
+
+def contact_page(request):
+    return render(request,'contact.html')
  
